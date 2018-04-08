@@ -1,0 +1,30 @@
+
+body.btMenuHorizontal .menuPort ul > li > ul {
+    opacity: 1;
+    pointer-events: auto;
+    display: none;
+}
+
+
+body.btMenuHorizontal .menuPort ul > li:hover > ul {
+    display: block;
+}
+
+body.btMenuHorizontal .menuPort ul > li:hover > ul > li > ul {
+    display: none;
+}
+
+body.btMenuHorizontal .menuPort ul > li:hover > ul > li:hover > ul {
+    display: block;
+}
+
+body.btMenuHorizontal .menuPort ul > li:hover > ul > li:hover > ul > li > ul {
+    display: none;
+}
+
+body.btMenuHorizontal .menuPort ul > li:hover > ul > li:hover > ul > li:hover > ul {
+    display: block;
+}
+
+
+

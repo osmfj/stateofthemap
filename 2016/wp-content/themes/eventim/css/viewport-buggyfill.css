@@ -1,0 +1,15 @@
+.fullScreenHeight {
+    content: 'viewport-units-buggyfill; height: 100vh;';
+}
+
+.smallSliderHeight .slidedItem .port {
+    content: 'viewport-units-buggyfill; height: 40vh;';
+}
+
+.mediumSliderHeight .slidedItem .port {
+    content: 'viewport-units-buggyfill; height: 60vh;';
+}
+
+.largeSliderHeight .slidedItem .port {
+    content: 'viewport-units-buggyfill; height: 100vh;';
+}

@@ -1,0 +1,15 @@
+.bt_import_xml { 
+	cursor: pointer;
+}
+
+.bt_import_xml:hover {
+	color: #888;
+}
+
+.bt_import_progress {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}

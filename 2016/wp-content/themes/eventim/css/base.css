@@ -1,0 +1,199 @@
+/* FontAwesome */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  7-stroke (http://themes-pixeden.com/font-demos/7-stroke/index.html) */
+
+@font-face {
+    font-family: 'Icon7Stroke';
+    src:url('../fonts/Pe-icon-7-stroke.eot?d7yf1v');
+    src:url('../fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
+    url('../fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),
+    url('../fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'),
+    url('../fonts/Pe-icon-7-stroke.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+/* Weather icons */
+
+@font-face {
+    font-family: 'WeatherIcons';
+    src: url('../fonts/weathericons-regular-webfont.eot');
+    src: url('../fonts/weathericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/weathericons-regular-webfont.woff2') format('woff2'),
+         url('../fonts/weathericons-regular-webfont.woff') format('woff'),
+         url('../fonts/weathericons-regular-webfont.ttf') format('truetype'),
+         url('../fonts/weathericons-regular-webfont.svg#weather_iconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables */
+
+@set baseTemplateWidth 1400; // Base gutter width
+
+@set headingFont Roboto; // Headline fond
+@set headingSuperTitleFont Roboto; // Headline supertitle font
+@set headingSubTitleFont Roboto; // Headline subtitle font
+
+@set logoFont Roboto; // Headline fond
+@set menuFont Raleway; // Base font
+
+@set bodyFont Raleway; // Base font
+@set bodyFontSize 16; // Base font size
+
+@set lightFontColor #333333; // Base font color
+@set lightHeadlineColor #222222; // Base headline color
+@set lightBgColor #fff; // Base bg color
+@set lightBorderColor rgba(0,0,0,0.2); // Base border color
+@set lightBgSubColor rgba(0,0,0,0.07);  // Sub bg color
+
+@set darkFontColor #fff; // Base font color
+@set darkHeadlineColor #fff; // Base headline color
+@set darkBgColor #111; // Base bg color
+@set darkBorderColor rgba(255,255,255,0.1); // Base border color
+@set darkBgSubColor rgba(255,255,255, 0.02);  // Sub bg color
+
+@set accentColor #3ea2e0; // Main color
+@set accentColorDark l-adjust($(accentColor) -54);// Darker main color
+@set accentColorLight a-adjust($(accentColor) -30);// Darker main color
+
+@set alternateColor #e6361e; // Main color 
+@set sidebarWidth 30; // Sidebar width (%)
+@set sidebarPadding 40; // Padding between sidebar and sontent
+@set pagePadding 20; // Left and right page padding for boxed content
+@set innerVerticalPadding 20; // Top and bottom padding between content elements (base value)
+@set innerHorizontalPadding 15; // RowItem padding
+@set gridSpacing 5; // Default spacing in grid gallery
+@set logoHeight 50; // Defines logo height and menu line height
+
+@set menuVerticalPadding 20; // Top and bottom padding of the whole horizontal menu (px)
+@set menuPadding 70; // Padding between horizontal menu elements (px)
+@set verticalMenuWidth 320; // Width of the vertical menu (px)
+@set topBarHeight 35; // Top bar height (px)
+@set dropdownWidth 220; // dropdown width (px)
+@set menuFontSize 18; // Base font size
+
+@set extrasmallIconSize 26; // Small icon size
+@set smallIconSize 30; // Small icon size
+@set mediumIconSize 50; // Small icon size
+@set bigIconSize 70; // Small icon size
+@set largeIconSize 120; // Small icon size
+
+
+
+/* Aliases */
+
+@selector darkSkinSelector :any(.btDarkSkin, .btLightSkin .btDarkSkin);
+@selector lightSkinSelector :any(.btLightSkin, .btDarkSkin .btLightSkin);
+
+
+/* Reset */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+    display: block; 
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+*:focus, * {
+    outline: none;
+    outline: 0;
+}
+
+.touch * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-focus-ring-color:  rgba(0, 0, 0, 0);
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+/* FloatClears */
+
+.btClear:after, .mainHeader:after, .menuHolder .port:after, .topBarPort:after, .boldSiteFooter:before, .boldSiteFooter:after, .boldSiteFooter .port:after, .contentWrap:after,
+.contentHolder:after, .btBox:after, .boldSection .port:after, .header:after, .boldRow:after, .socialRow:before, .socialRow:after, .servicesItem .sIcon:after,
+.boldSection:before, .boldSection:after, .psCats:after, .psWrap:after, .btTabs:after, .tabsHeader:after, .neighboringArticles:after, .socialRow:after,
+.articleListItem footer:after, .btPagination:after, .boldArticleBody blockquote:after, .tilesWall.classic .bgiTxt:after, .btQuoteItem:after,
+.boldArticleHeader .socialRow:before, .tagcloud:after, .btInstaGrid:after
+{
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+

@@ -1,0 +1,174 @@
+@media (max-width: 992px) {
+	.woocommerce {
+		.col2-set .col-1,.col2-set .col-2, .cart-collaterals .cross-sells, .cart-collaterals .cart_totals {
+			float: none;
+			width: 100%;
+			display: block;
+		}	
+		ul.products {
+			li.product {
+				width: 50% !important;;
+			}
+			li.product:nth-child(odd) {
+				clear: left;
+			}
+			li.first {
+				clear: none !important;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 620px) {
+
+	.woocommerce {
+		 #content table.cart td.actions .button.alt, #content table.cart td.actions .input-text+.button, table.cart td.actions .button.alt, table.cart td.actions .input-text+.button {
+			float: none;
+		}
+
+		.cart .actions input[type="submit"].button {
+			float: none;
+		}
+
+		form .form-row-first, form .form-row-last {
+			float: none;
+			width: auto;
+		}
+
+		p.lost_password {
+			float: none;
+			margin: 1em 0 0;
+			clear: left;
+		}
+
+		p.form-row:not(.form-row-wide) {
+			float: none;
+		}
+
+		.woocommerce-ordering, .woocommerce-ordering {
+			float: none;
+			margin: 0.75em 0 0;
+		}
+
+		.woocommerce-ordering .fancy-select {
+			width: auto;
+			margin: 0 0 $(pagePadding)px;
+		}
+
+		.woocommerce-result-count {
+			float: none;
+			margin: 0;
+		}
+
+		#content table.cart td.actions .coupon, table.cart td.actions .coupon {
+			float: none;
+			margin: 0 0 1em;
+		}
+
+		.commentTxt .star-rating {
+			margin: 4px 0 8px 0;
+			clear: right;
+		}
+
+		#content table.cart td.actions .coupon, table.cart td.actions .coupon {
+			float: none;
+		}
+
+		> form {
+			display: block;
+			position: relative;
+			overflow-x: auto;
+			max-width: 100%;
+			margin: 0 0 1em;
+		}
+
+	   table.shop_table_responsive {
+		   display: block;
+		   margin: 0;
+		   tbody th, thead, .product-thumbnail {
+				display: none;
+			}
+			tbody {
+				display: block;
+				width: 100% !important;				
+			}
+			tr, th {
+				display: block;
+				width: 100% !important;
+				td {
+					display: block;
+					width: 100% !important;
+					clear: left;
+				}
+				td:not(.product-remove):not(.actions):before {
+					content: attr(data-title) ": ";
+					font-weight: 700;
+				}
+				td.product-remove {
+					text-align: right;
+				}
+			}
+			.coupon, input[name="update_cart"].button, #coupon_code, .input-text + .button  {
+				float: left;
+				clear: left;
+				width: 100%;
+				margin: 0 0 10px 0;
+				min-width: auto !important;
+			}
+			td.actions:after {
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+
+		table.my_account_orders {
+			tr td.order-actions:before {
+				display: none;
+			}
+			tr td.order-actions {
+				text-align: left;
+			}
+			tr td.order-actions .button {
+				float: none;
+				margin: .125em .25em .125em 0;
+			}
+		}
+
+		div.product {
+			div.images, div.summary, div.images, div.summary {
+				float: none;
+				width: 100%;
+			}	
+		}
+
+		.lost_reset_password {
+			.form-row-first, .form-row-last {
+				width: 100%;
+				float: none;
+				margin-right: 0;
+			}		
+		}
+	}
+	.woocommerce-checkout form.login .form-row {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media (max-width: 480px) {
+ 	.woocommerce {
+		header.title .edit {
+			display: block;
+			float: left;
+			clear: left;
+			margin: 0 0 $(innerVerticalPadding)px;
+		}
+
+		ul.products li.product {
+			width: auto !important;
+			float: none;
+		}	
+	} 
+}

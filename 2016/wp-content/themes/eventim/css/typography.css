@@ -1,0 +1,229 @@
+/* Form elements */
+
+/*input {
+    -webkit-appearance: none;
+}*/
+
+input:not([type='checkbox']):not([type='radio']), textarea, select {
+    outline:none;
+	font: inherit;
+	width: 100%;
+	background: transparent;
+	line-height: 1;
+}
+
+input:not([type='checkbox']):not([type='radio']), select {
+	padding: 10px;
+	background: transparent;
+	line-height: inherit;
+	width: 100%;
+	display: block;
+}
+
+input:not([type='checkbox']):not([type='radio']):not([type='submit']):focus, textarea:not([type='checkbox']):not([type='radio']):focus {
+	box-shadow: 0 0 4px 0 $(accentColor);
+	border: 1px solid $(lightFontColor);
+	transition: all 500ms ease;
+}
+
+textarea {
+    padding: 10px;
+    resize: vertical;	
+}
+
+button {
+	font: inherit;
+}
+
+/* Texts */
+
+:any( figure, img, select, embed, iframe ) {
+	max-width: 100%;
+	height: auto;
+}
+
+pre code {
+	display: block;
+}
+
+pre {
+	overflow: hidden;
+}
+
+/* Href */
+
+a {
+    text-decoration: none;
+	transition: color 300ms ease;
+	color: $(accentColor);
+}
+
+a:hover {
+    text-decoration: none;
+	:lightSkinSelector & {
+		color: $(lightFontColor);
+	}
+	:darkSkinSelector & {
+		color: $(darkFontColor);
+	}
+    
+}
+
+a img {
+    border: none;
+}
+
+a, a:active, a:focus {
+    outline: none;
+}
+
+/* Base typography */
+
+p, dl, address, cite  {
+	margin: 0 0 $(innerVerticalPadding)px;
+	/*margin: 0 0 25px;  Should be font size  * line-height */
+}
+
+ul, ol, li {
+	margin: 0 0 $(innerVerticalPadding)px 5px;
+	padding: 0 0 0 5px;
+}
+
+li, ul ul, ol ol {
+	margin-bottom: 0;
+}
+
+dt  {
+	font-weight: 600;
+	display: inline;
+	padding-right: 10px;
+}
+
+dd  {
+	display: inline;
+	p {
+		display: inline;
+	}
+}
+
+dd:after {
+    content: ' ';
+	display: table;
+	clear: both;
+}
+
+figcaption {
+	font-size: math($(bodyFontSize)-2, px);
+}
+
+:any(select, input)  {
+	font-family: $(bodyFont);
+}
+
+/*html {
+    font-size: 62.5%;
+}*/
+
+/* Base font */
+
+html, body {
+    min-height: 100vh;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+    font-family: "$(bodyFont)", Arial, sans-serif;
+}
+body {
+    font-size: $(bodyFontSize)px;
+	font-weight: 400;
+    line-height: 1.8;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.small, small {
+	font-size: math($(bodyFontSize)-2, px);
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "$(headingFont)";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+	margin: 0 0 $(innerVerticalPadding)px 0;
+    line-height: 1.5;
+    padding: 0;
+	letter-spacing: -1px;
+}
+
+
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+h1 {
+    font-size: 64px;
+	line-height: math( this( font-size ) + 10 )px;
+}
+
+h2 {
+    font-size: 40px;
+	line-height: math( this( font-size ) + 10 )px;
+}	
+
+h3 {
+    font-size: 30px;
+	line-height: math( this( font-size ) + 10 )px;
+}
+
+h4, h5, h6 {
+    font-size: 24px;
+	letter-spacing: -1px;
+    font-weight: 700;
+	line-height: math( this( font-size ) + 10 )px;
+}
+
+:darkSkinSelector :any(h4, h5, h6) {
+	font-weight: 500;
+}
+
+h5 {
+    font-size: 21px;
+	line-height: math( this( font-size ) + 10 )px;
+}
+
+h6 {
+    font-size: 18px;
+	line-height: math( this( font-size ) + 10 )px;
+}
+
+/* Tables */
+
+.btContentHolder {
+	table {
+		width: 100%;
+		margin: 0 0 1em 0;
+		border-collapse: collapse;
+		text-align: left;
+		border: 1px solid $(lightBgSubColor);
+		td, th {
+			padding: 1em;
+			border: 1px solid $(lightBgSubColor);
+		}
+		thead {
+			th {
+				font-weight: 700;
+				background-color: $(accentColor);
+				color: white;
+			}
+		}
+		
+	}
+}

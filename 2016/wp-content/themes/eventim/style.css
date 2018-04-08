@@ -1,0 +1,48 @@
+/* 
+Theme Name: Eventim
+Theme URI: http://eventim.bold-themes.com
+Description: Responsive theme.
+Version: 1.0.7
+Author: BoldThemes
+Author URI: http://bold-themes.com
+Tags: one-column, right-sidebar, fluid-layout, responsive-layout, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: showcase
+License: GNU General Public License version 3.0 & Envato Regular/Extended License
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html & http://themeforest.net/licenses
+
+All PHP code is released under the GNU General Public Licence version 3.0
+All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
+
+[Table of contents]
+
+1. Base
+2. Typography
+3. Bootstrap grid
+4. Bold themes grid 
+5. Template
+6. Header
+7. Footer
+8. Post
+9. Elements
+10. Animations
+11. Woocommerce
+12. Cost calculator
+13. Screens
+14. Woocommerce screens
+
+*/
+
+@import url("css/base.css");
+@import url("css/typography.css");
+@import url("css/bootstrap.grid.css");
+@import url("css/grid.css");
+@import url("css/template.css");
+@import url("css/header.css");
+@import url("css/footer.css");
+@import url("css/post.css");
+@import url("css/elements.css");
+@import url("css/animations.css");
+@import url("css/woocommerce.css");
+@import url("css/costcalc.css");
+@import url("css/screens.css");
+@import url("css/woocommerce-screens.css");

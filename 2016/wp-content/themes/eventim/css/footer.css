@@ -1,0 +1,59 @@
+/* Footer widgets */
+
+.btSiteFooterWidgets {
+	/*border-top: 3px solid $(accentColor);*/
+} 
+
+/* Footer copyright */
+
+.btSiteFooter  {
+	font-size: 0.9em;
+	padding: 10px 0;
+	.port {
+		max-width: math($(baseTemplateWidth) - 2*$(pagePadding), px);;
+		margin: auto;
+	}
+	.copyLine {
+		margin-bottom: 0;
+	}
+	.menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: right;
+		li {
+			display: inline-block;
+			margin: 0 15px 0 0;
+			padding: 0;
+		}
+		li:last-child {
+			margin: 0;
+		}
+	}
+}
+
+:lightSkinSelector {
+	.btSiteFooterWidgets  {
+		background: $(lightBgSubColor);
+	}
+	.btSiteFooter  {
+		background: $(lightBgColor);		
+	}
+}
+
+:darkSkinSelector {
+	.btSiteFooterWidgets  {
+		background: $(accentColorDark);
+	}
+	.btSiteFooter  {
+		background: $(accentColor);	
+	}
+}
+
+footer {
+	/*border-top: 3px solid $(accentColor);*/
+}
+
+section footer, article footer {
+	border-top: none;
+}

@@ -1,0 +1,15 @@
+.bt_quote_icon {
+    background-image: url(vc_icon.png);
+}
+
+.bt_quote_icon_item {
+    background-image: url(vc_icon_item.png);
+}
+
+.bt_quote_icon_multiply {
+    background-image: url(vc_icon_multiply.png);
+}
+
+.bt_quote_icon_group {
+    background-image: url(vc_icon_group.png);
+}

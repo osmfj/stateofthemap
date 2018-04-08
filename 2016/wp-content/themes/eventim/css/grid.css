@@ -1,0 +1,394 @@
+/* Grid elements base */
+
+.gutter .port {
+    max-width: math($(baseTemplateWidth) - 2*$(pagePadding), px);
+	margin: auto;
+}
+
+.port {
+
+}
+
+.boldCell {
+	
+}
+
+/* Divider */
+
+.btDivider {
+	border-bottom: 1px solid $(lightBorderColor);
+}
+
+/* Row and column */
+
+.boldRow {
+    display: block;
+	margin: 0 -$(innerHorizontalPadding)px;
+}
+
+.btScrollInfoRow {
+	position: absolute;
+    bottom: 40px;
+    width: 100%;
+	.sIcon {
+		margin-bottom: 5px !important;
+	}
+	/*.btIcoHolder:before {
+		margin-bottom: 10px !important;
+		font-size: 30px !important;
+		line-height: 30px !important;
+		height: 30px !important;
+	}*/
+}
+
+.rowItem {
+    padding: 0 $(innerHorizontalPadding)px;
+}
+
+.rowItemContent {
+	position: relative;
+	width: 100%;
+}
+
+.btDoubleRowPadding {
+	.boldRow {
+		display: block;
+		margin: 0 -math( 2*$(innerHorizontalPadding), px );
+	}
+
+	.rowItem {
+		padding: 0 math( 2*$(innerHorizontalPadding), px );
+	}	
+}
+
+/* Vertical align should be removed om small screens. Otherwise it won't break into the new row  */
+
+@media (min-width: 768px) {
+
+	.boldRowInner.btTableRow {
+		display: flex;
+		table-layout: fixed;
+		align-items: stretch;
+		 > .rowItem {
+			display: flex;
+			align-items: center;
+		}
+		 > .rowItem.btMiddleVertical {
+			> .rowItemContent {
+				width: 100%;		
+			}
+		}
+
+		 > .rowItem.btBottomVertical {
+			align-items: flex-end;		
+			> .rowItemContent {
+				width: 100%;	
+			}
+		}
+	}
+
+/* Cell border, removed on c */
+
+
+
+	.rowItem.btLeftBorder {
+		border-left: 1px solid $(lightBorderColor);
+	}
+
+	.rowItem.btLeftBorder {
+		border-left: 1px solid $(lightBorderColor);
+	}
+
+	.rowItem.btRightBorder {
+		border-right: 1px solid $(lightBorderColor);
+	}
+
+	:darkSkinSelector .rowItem.btRightBorder {
+		border-right: 1px solid $(darkBorderColor);
+	}
+
+	:darkSkinSelector .rowItem.btLeftBorder {
+		border-left: 1px solid $(darkBorderColor);
+	}
+}
+
+/* Grid elements spacing */
+
+.topExtraSmallSpaced {
+    padding-top:  math($(innerVerticalPadding)/4, px);
+}
+
+.topSmallSpaced {
+    padding-top: $(innerVerticalPadding)px;
+}
+
+.topSemiSpaced {
+    padding-top: math(2*$(innerVerticalPadding), px);
+}
+
+.topSpaced {
+    padding-top: math(4*$(innerVerticalPadding), px);
+}
+
+.topLargeSpaced {
+    padding-top: math(6*$(innerVerticalPadding), px);
+}
+
+.topExtraSpaced {
+    padding-top: math(8*$(innerVerticalPadding), px);
+}
+
+.bottomExtraSmallSpaced {
+    padding-bottom:  math($(innerVerticalPadding)/4, px);
+}
+
+.bottomSmallSpaced {
+    padding-bottom: $(innerVerticalPadding)px;
+}
+ 
+.bottomSemiSpaced {
+    padding-bottom: math(2*$(innerVerticalPadding), px);
+}
+
+.bottomSpaced {
+    padding-bottom: math(4*$(innerVerticalPadding), px);
+}
+
+.bottomLargeSpaced {
+    padding-bottom: math(6*$(innerVerticalPadding), px);
+}
+
+.bottomExtraSpaced {
+    padding-bottom: math(8*$(innerVerticalPadding), px);
+}
+
+/* Horizontal padding */
+
+.rowItem.btDoublePadding > .rowItemContent {
+    padding: 0 math(2*$(innerHorizontalPadding), px);
+}
+
+.btTableRow > .rowItem.btDoublePadding > .rowItemContent {
+    padding: 0 math(4*$(innerHorizontalPadding), px);
+}
+
+.rowItem.btNoPadding {
+    padding: 0;
+}
+
+.rowItem.btNoPadding {
+    padding: 0;
+}
+
+/* Text indent */
+
+.btTextIndent .rowItemContent {
+	padding: 0 math($(innerHorizontalPadding)*2, px);
+}
+
+.btTextIndent .rowItemContent :any(.btImage, .bpgPhoto) {
+	margin: 0 -math($(innerHorizontalPadding)*2, px);
+}
+
+/* Highlighted section */
+
+.btHighlight > .rowItemContent {
+	border: 3px solid $(accentColor);
+}
+
+
+
+/* Helpers */
+
+.boldRow:after, .btClear:after {
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.btClear {
+	clear: both;
+}
+
+.btTextLeft {
+	text-align: left;
+}
+
+.btTextRight {
+	text-align: right;
+}
+
+.btTextCenter {
+	text-align: center;
+}
+
+.fullScreenHeight {
+	height: 100vh;
+	.port {
+		height: 100%;
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+	}
+	.boldCell {
+		height: 100%;
+		width: 100%;
+		display: table-cell;
+	}
+	.boldCellInner {
+		display: block;
+	}
+}
+
+.btMiddleVertical .boldCell {
+	vertical-align: middle;
+}
+
+.btBottomVertical .boldCell {
+	vertical-align: bottom;
+}
+
+.btGhost {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 500ms ease-out;
+}
+
+.btGhost.btRemoveGhost {
+	transform: translateY(-100%) scale(0.7);
+	opacity: 0;
+}
+
+.wBackground {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.wBackground.cover {
+    background-size: cover;
+}
+
+.wBackground.contain {
+    background-size: contain;
+}
+
+.boldSection.video {
+	position: relative;
+	overflow: hidden;
+}
+
+.boldSection.video video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: opacity 1000ms;
+}
+
+.boldSection.video.video_on video {
+	opacity: 1;
+}
+
+/* Accent color background helper class */
+
+.btAccentColorBackground {
+    background-color: $(accentColor) !important;
+}
+
+:lightSkinSelector .btDefaultColorBackground {
+    background-color: $(lightBgSubColor) !important;
+}
+
+:darkSkinSelector .btDefaultColorBackground {
+    background-color: $(darkBgSubColor) !important;
+}
+
+.boldSection.btStriped:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.7;
+	background-color: transparent;
+	background-position: center;
+	background-repeat: repeat;
+	background-image: url('../gfx/diagonalstripe.png');
+	background-size: 4px 4px;
+}
+
+.boldSection.btStriped.black:before, .boldSection.btStripedBlack:before  {
+	background-image: url('../gfx/diagonalstripe-black.png');
+}
+
+.boldSection.btStriped {
+	position: relative;
+	.port {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.boldSection.btStriped.btStripedLight:before {
+	opacity: 0.2;
+}
+
+/* Animated elements */
+
+.btParallax, .boldthemes_parallax {
+	transition-property: background-position;
+	transition-duration: 0ms;
+	transition-delay: 0ms;
+	background-attachment: fixed;
+}
+
+.animate {
+	transition: all 1000ms ease-out-expo 200ms;
+}
+
+.animate-fadein {
+	opacity: 0;
+	transform: scale(0.98);
+}
+
+.touch .animate-fadein {
+	opacity: 1;
+}
+
+.animate-moveleft {
+	transform: translateX(100px);
+}
+
+.animate-moveright {
+	transform: translateX(-100px);
+}
+
+.animate-moveup {
+	transform: translateY(100px);
+}
+
+.animate-movedown {
+	transform: translateY(-100px);
+}
+
+.animated {
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+  transition: all 1s ease-out-expo 200ms;
+}
+
+@for i in range(0, 11) {
+	body:not(.btHalfPage) .rowItem:nth-child(#(i)) {
+		transition-delay: math(#(i)*200, ms);
+	}
+}
