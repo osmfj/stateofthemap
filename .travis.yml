@@ -14,7 +14,7 @@ script:
   - git config user.name "OSMFJ automated builder"
   - cd ..
   - git add -A 2018
-  - git commit -m "Travis #TRAVIS_BUILD_NUMBER"
+  - git commit -m "Update from travis \#%TRAVIS_BUILD_NUMBER%"
   - git push --quiet origin master > /dev/null 2>&1
 
 env:
