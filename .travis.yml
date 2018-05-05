@@ -1,0 +1,21 @@
+language: ruby
+
+install:
+- git clone https://github.com/osmfj/sotmjp2018
+- cd sotmjp2018
+- bundle install
+- cd ..
+
+script:
+- cd sotmjp2018
+- jekyll build
+- cp -R _site/* ../2018/
+- git config user.email info@osmf.jp
+- git config user.name "OSMFJ automated builder"
+- git add -A .
+- git commit -am "Travis
+- git push --quiet origin master > /dev/null 2>&1
+
+env:
+  global:
+  - secure: ZLJRlGDzDUV69klNdRhSiIWwUgA7M2d19nKylJpMnWEXiPfX61+Kl2owrCn2iAHrDYkD13jRI/9Kqw9m4xzLRll2XD3DATPLENrYkWpPrfjLaS+VGnyHr62T6Hm1FZSim9t4wZCav0hTo5uUdVfmELuPCdACwSrvpQt4DFw9kDmhsiYYdPnjVrWBaDpIAqeiBiSWdb6bNVi1f6l/tYw58OU0aB4nmppmNVSHRDEq4o7V3m/Vbas21X2/3dQrzmdQ4FBbGYqp3IatB22S3yu8fAWbndDvutPNE/joV4XVMCL33ZlEZcPK4Ji3bXRaGc+qHBzcNS1RiFY89+aPcAOT3sf5tbSSDqIy7P9IAZ1MhFhsYT4HRaLzY3RlSCfCWVXgB3ZlP6Zqb0eulaX61v7aeObzhCTxsTQK/OqR9oan81j/jl21v8VBMsOgmAugWgknd8SMCjMnNxHe4owWQaaWaZ5oHEm4PzPzlxAj0n+CCN8oBTMaO1gXoPVk8k5r/kk4nz0iGFugTANkApu6iPvVzjuzA3o0jg6IMjRhHISUhVSHJR6ucVy96o1MjoJLQsELrbBwGOkd2VzLdm3BI+DIR83qCU/IxtlaySpkAHHQFcut2iZSRNyE97HEkO3MdR7SDVHVXmm+DMf09gIi5XJem4upXzAaq6UBUhHzLCilMkw=
