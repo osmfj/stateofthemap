@@ -8,8 +8,8 @@ install:
 
 script:
   - cd sotmjp2018
-  - jekyll build
-  - cp -R _site/* ../2018/
+  - jekyll build -b 2018
+  - cp -R 2018/* ../2018/
   - git config user.email info@osmf.jp
   - git config user.name "OSMFJ automated builder"
   - cd ..
