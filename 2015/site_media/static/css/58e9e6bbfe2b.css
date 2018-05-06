@@ -6988,7 +6988,7 @@ fieldset[disabled] .home .banner .promo a.active {
   background-color: #ffffff;
 }
 .home .banner .logo {
-  background: url('../img/sotmjapan-logo.png%3F39a9758d3b8f') no-repeat scroll 0 0 transparent;
+  background: url('../img/sotmjapan-logo.png') no-repeat scroll 0 0 transparent;
   display: block;
   height: 300px;
   text-indent: -9999px;
