@@ -1,0 +1,18 @@
+.sponsorlist {
+  margin-bottom: 1.5rem; }
+
+.sponsorlist h2 {
+  margin-bottom: 0rem; }
+
+.sponsorlist a {
+  display: inline-block;
+  margin: 10px 5px; }
+
+.gold-sponsor a {
+  width: 25%; }
+
+.silver-sponsor a {
+  width: 20%; }
+
+.supporter-sponsor a {
+  width: 15%; }
