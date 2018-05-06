@@ -1,0 +1,39 @@
+$version: "1.0.0";
+$author: "KMR-Zoar";
+$created: "2018-05-06";
+/*
+  Sponsor logo size
+*/
+$GOLD_SPONSOR_WIDTH: 25%;
+$SILVER_SPONSOR_WIDTH: 18%;
+$SUPPORTER_SPONSOR_WIDTH: 8%;
+
+.sponsorlist {
+   margin-bottom: 1.5rem;
+}
+
+.sponsorlist h2 {
+  margin-bottom: 0rem;
+}
+
+.sponsorlist a {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.gold-sponsor a {
+  width: $GOLD_SPONSOR_WIDTH;
+}
+
+.silver-sponsor a {
+  width: $SILVER_SPONSOR_WIDTH;
+}
+
+.supporter-sponsor a {
+  width: $SUPPORTER_SPONSOR_WIDTH;
+}
+
+// スポンサーレベルの見出し装飾用
+.gold-heading {}
+.silver-heading {}
+.supporter-heading {}
