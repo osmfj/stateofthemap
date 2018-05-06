@@ -1,0 +1,75 @@
+.schedule {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  border-collapse: collapse;
+  border-spacing: 0px; }
+
+thead td {
+  background-color: #0000ca;
+  color: #ffffff;
+  font-weight: 700; }
+
+th {
+  background-color: #ddddff;
+  font-weight: normal;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  width: 10%; }
+
+td {
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  width: 30%; }
+
+.scope-out {
+  background-color: lightgrey; }
+
+.slot-cell {
+  text-align: left; }
+
+.slot-cell p {
+  margin: 0px 2px; }
+
+.session {
+  margin: 5px 0px; }
+
+.session-speaker {
+  display: inline-block; }
+
+.session-speaker::after {
+  content: '/'; }
+
+.session-title {
+  display: inline-block; }
+
+.slot-room {
+  display: none; }
+
+@media (max-width: 768px) {
+  table {
+    width: 100%; }
+
+  thead td {
+    display: none; }
+
+  th, td {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+    border-top: none; }
+
+  tr:first-child th {
+    border-top: 1px solid #c0c0c0; }
+
+  .scope-out {
+    display: none; }
+
+  .slot-room {
+    display: block;
+    color: #0000ca;
+    font-weight: 700; } }
