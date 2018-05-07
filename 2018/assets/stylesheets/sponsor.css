@@ -7,15 +7,16 @@
 .sponsorlist h2 {
   margin-bottom: 0rem; }
 
-.sponsorlist a {
+.sponsorlist .logo {
   display: inline-block;
-  margin: 10px 5px; }
+  margin-bottom: 10px; }
 
-.gold-sponsor a {
-  width: 25%; }
+.gold-sponsor .logo {
+  width: 45%;
+  text-align: center; }
 
-.silver-sponsor a {
-  width: 18%; }
+.silver-sponsor .logo {
+  width: 30%; }
 
-.supporter-sponsor a {
-  width: 8%; }
+.supporter-sponsor .logo {
+  width: 23%; }
