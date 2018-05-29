@@ -5,18 +5,29 @@
   margin-bottom: 1.5rem; }
 
 .sponsorlist h2 {
-  margin-bottom: 0rem; }
+  margin-bottom: 0rem;
+  text-transform: capitalize; }
 
 .sponsorlist .logo {
   display: inline-block;
+  text-align: center;
   margin-bottom: 10px; }
 
 .gold-sponsor .logo {
   width: 45%;
-  text-align: center; }
+  font-size: 40px; }
 
 .silver-sponsor .logo {
-  width: 30%; }
+  width: 30%;
+  font-size: 30px; }
+
+.support-sponsor .logo {
+  width: 23%;
+  font-size: 20px; }
 
 .supporter-sponsor .logo {
   width: 23%; }
+
+.logo img {
+  height: auto;
+  max-height: 100px; }
