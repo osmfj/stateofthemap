@@ -1,4 +1,9 @@
 var store = [{
+        "title": "基調講演が決定",
+        "excerpt":"基調講演が決定しました。 岡本 真 さん アカデミック・リソース・ガイド株式会社（ARG） 代表取締役/プロデューサー に、ご講演いただきます! –実行委員長 三浦 ","categories": ["keynote","schedule"],
+        "tags": [],
+        "url": "https://stateofthemap.jp/2018/keynote/schedule/2016/06/02/decide-keynote.html"
+      },{
         "title": "講演募集(CFP)が開始",
         "excerpt":"たいへんおまたせしました。講演募集(CFP)を開始しました。講演に、Google Formsへのリンクがありますので、そちらに投稿をお願いします。 6月18日まで受付していますので、よろしくおねがいします。 三浦 ","categories": [],
         "tags": [],
