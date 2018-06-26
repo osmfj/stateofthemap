@@ -35,16 +35,15 @@ td {
   margin: 0px 2px; }
 
 .session {
-  margin: 5px 0px; }
+  margin: 5px 0px;
+  height: 6.5em; }
 
 .session-speaker {
-  display: inline-block; }
-
-.session-speaker::after {
-  content: '/'; }
+  display: block; }
 
 .session-title {
-  display: inline-block; }
+  display: block;
+  border-bottom: 1px dashed #0000ca; }
 
 .slot-room {
   display: none; }
