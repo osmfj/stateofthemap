@@ -1,5 +1,5 @@
 .schedule {
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -36,14 +36,20 @@ td {
 
 .session {
   margin: 5px 0px;
-  height: 6.5em; }
+  min-height: 6.5em;
+  max-height: 9em;
+  border-bottom: 1px solid #c0c0c0; }
+
+.session:last-child {
+  border-bottom: none; }
 
 .session-speaker {
   display: block; }
 
 .session-title {
   display: block;
-  border-bottom: 1px dashed #0000ca; }
+  border-bottom: 1px dashed #0000ca;
+  word-break: break-all; }
 
 .slot-room {
   display: none; }
