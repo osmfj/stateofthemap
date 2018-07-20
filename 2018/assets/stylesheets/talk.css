@@ -1,0 +1,31 @@
+.talk-speaker {
+  display: inline-block;
+  font-size: 3em;
+  border-bottom: 3px solid #ddddff;
+}
+
+.talk-title {
+  display: block;
+  font-size: 1.8em;
+}
+
+.hallname {
+  font-size: 3.5em;
+  margin-bottom: .25rem;
+}
+
+.hallname > span {
+  border-bottom: 3px solid #ddddff;
+}
+
+.talk-session {
+  margin-left: 1em;
+}
+
+.time-range::before {
+  content: '- '
+}
+
+.time-range::after {
+  content: ' -'
+}
