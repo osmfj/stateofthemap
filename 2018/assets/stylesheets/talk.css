@@ -29,3 +29,7 @@
 .time-range::after {
   content: ' -'
 }
+
+.talk-session ul{
+  margin-top: -25px;
+}
