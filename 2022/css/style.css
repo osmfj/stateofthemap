@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+:root {
+  --main-color: #49bb8c;
+  --accent-color: #e74c3c;
+  --text-color: #363636;
+  --gray-color: #c2c7ce;
+  --bg-color: #f4f3f1;
+  --base-font-family: "Noto Sans CJK JP", "Noto Sans JP", "BIZ UDPGothic", "BIZ UDGothic", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--base-font-family)
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: solid 2px transparent;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--text-color);
+  border-bottom: solid 2px var(--text-color);
+}
+
+/* header */
+
+header {
+  background-image: url("../img/JRW_Kakogawa_line_P5113924-duo.webp");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+header h1,
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+header p.lead {
+  font-feature-settings: "palt";
+}
+
+/* section */
+
+section {
+  font-feature-settings: "palt";
+}
+
+section.even {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+}
+
+section h2,
+section h3 {
+  font-weight: 700;
+  text-align: center;
+}
+
+section h2 i {
+  font-size: 3rem;
+  font-weight: 900;
+  vertical-align: -.125em;
+}
+
+.speakertalk {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+}
+
+/* page */
+
+.page__article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page__article p {
+  text-align: justify;
+  font-feature-settings: "palt";
+  text-justify: inter-character;
+  word-break: break-all;
+  overflow-wrap:break-word;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  text-indent: 1em;
+}
+
+aside.coc_publishing {
+  width: 90%;
+}
+
+.coc_publishing p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  text-indent: 0;
+}
+
+
+/* footer */
+
+footer {
+  color: white;
+  background-color: var(--text-color);
+}
