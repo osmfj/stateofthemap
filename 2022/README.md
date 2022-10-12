@@ -1,4 +1,4 @@
-# State of the map Japan 2022 Website
+# State of the Map Japan 2022 Website
 
 ## How to preview website with Docker and Visual studio code
 
