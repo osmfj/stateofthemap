@@ -8,19 +8,19 @@
   <title>State of the Map Japan 2022 in Kakogawa - State of the Map Japan 2022</title>
   <meta name="description"
     content="{% include about.html %}
+{% include news.html %}
 {% include outline.html %}
-{% include committee.html %}
-{% include map.html %}
-">
+{% include sponser.html %}
+{% include committee.htm...">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=5b57f4844e1a0eee2925e4058a92814802b48418">
+    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=6a2bd46bbfca83440e1ad3dcc2e78b444c279886">
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=5b57f4844e1a0eee2925e4058a92814802b48418">
+    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=6a2bd46bbfca83440e1ad3dcc2e78b444c279886">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/2022/css/style.css?v=5b57f4844e1a0eee2925e4058a92814802b48418">
+  <link rel="stylesheet" href="/2022/css/style.css?v=6a2bd46bbfca83440e1ad3dcc2e78b444c279886">
   
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
@@ -60,9 +60,12 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="/#about" class="nav-link">SOTMJについて</a></li>
+          <li class="nav-item"><a href="/#news" class="nav-link">お知らせ</a></li>
           <li class="nav-item"><a href="/#event-outline" class="nav-link">開催概要</a></li>
-          <li class="nav-item"><a href="/#about" class="nav-link">参加申し込み</a></li>
-          <li class="nav-item"><a href="./coc/" class="nav-link">行動規範</a></li>
+          <li class="nav-item"><a href="/#sponser" class="nav-link">スポンサー</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">プログラム(作成中)</a></li>
+          <li class="nav-item"><a href="https://forms.gle/AqBKpkDBfcdnBs896" class="nav-link">発表申し込み</a></li>
+          <li class="nav-item"><a href="coc.html" class="nav-link">行動規範</a></li>
         </ul>
       </div>
     </div>
@@ -77,9 +80,8 @@
       </div>
       <div class="col my-xxl-5 py-xxl-5">
         
-        <h1 class="display-3 fw-bold">State of the Map Japan 2022 in Kakogawa</h1>
+        <h1 class="display-4 fw-bold">State of the Map Japan 2022 in Kakogawa</h1>
         <h2 class="h4 fw-bold">2022年12月3日 (土曜日) 13:00 - 18:00 加古川商工会議所</h2>
-        <p class="lead fs-6">オープンストリートマップは「自由な地図をみんなの手に」をスローガンに、日本や世界の自由につかえる地図を実現していこうとボランティアが草の根で作成した地図データの集合体です。わたしたちは、この活動をさらに発展させるためにカンファレンスを企画しました</p>
         <!--
         <button class="btn btn-light" onclick="loction.href='https://example.com/'">今すぐ登録</button>
         -->
@@ -91,42 +93,67 @@
 <main>
 
   <section class="even" id="about">
-  <div class="container py-4 py-xl-5">
+  <div class="container pt-5 pb-5">
     <h2 class="display-6 fw-bold mb-4"><i class="bi bi-map"></i> State of the Map Japanについて</h2>
     <div class="row justify-content-center">
-      <div class="col-lg-5 ms-auto">
-        <p>
-          オープンストリートマップは、「自由な地図をみんなの手に」をスローガンに、日本や世界の自由につかえる地図を実現していこうと、ボランティアが草の根で作成した地図データの集合体です。わたしたちは、この活動をさらに発展させるために、カンファレンスを企画しました。
-        </p>
 
-        <p>
-          一般社団法人オープンストリートマップ・ファウンデーション・ジャパン（以下OSMFJ）では、OSM活動のより一層の浸透と企業を含む参加者同士の交流、コミュニティの活性化、地理空間情報利活用の推進、さらには、継続的なビジネスの発展と新たな市場の想像を目指し、State
-          of the Map Japan 2022 （以下SotM Japan）カンファレンスを開催することとしました。</p>
-
+      <p>OpenStreetMapは「自由な地図をみんなの手に」をスローガンに作成した地図データの集合体です。わたしたちは、この活動をさらに発展させるためにカンファレンスを企画しました。
+        <a style="color:white;" data-bs-toggle="collapse" href="#moreAbout" role="button" aria-expanded="false" aria-controls="moreAbout">(もっと読む)</a>
+      </p>
+      <div class="col-lg ms-auto collapse" id="moreAbout">
         <p>State of the Map（以下 SotM）は、世界中の多様な人々が紡ぐ世界地図プロジェクト
-          OpenStreetMapの国際カンファレンスシリーズであり、OSM編集者であるマッパー、IT技術者、OSMデータを利活用・支援する企業や団体など、世界のコミュニティが一同に介するカンファレンスとして、2008年から続けられています。
-        </p>
-      </div>
-      <div class="col-lg-5 me-auto">
-        <p>日本地域においては、2012年9月に東京で行われたアジア・オセアニア地域初であるSotM
-          2012世界総会をスタートとして、2014年より、日本地域におけるローカルカンファレンスとして、2014年の東京、2015年には浜松と、継続して開催されています。
-          2017年は会津若松で国際カンファレンスを誘致し、世界各国からのマッパーによる交流を行いました。2018年には、東京の日比谷図書文化館で、図書館とOSMをつなぐ活動について議論しました。2020年には、FOSS4G
-          Japanカンファレンスと共同で、オンラインでの開催を実施をしました。
-        </p>
+          OpenStreetMap(以下 OSM
+          )の国際カンファレンスシリーズであり、OSM編集者(マッパー)、技術者、OSMを利活用・支援する企業や団体など、世界のコミュニティが一同に介するカンファレンスとして、2008年から続けられています。</p>
+        <p>日本では2012年9月に東京でアジア・オセアニア地域初の国際カンファレンスを開催しました。その後、東京を中心に国内カンファレンスを開催しています。
+          2017年は会津若松で国際カンファレンスを誘致し、世界各国の参加者による交流を行いました。</p>
 
-        <p>SotM Japanでは、全世界版のSotMの趣旨および価値観をそのままに、日本および日本語でのOSM活動について、新しいアイディアや開発手法、利用方法、ビジネス事例、将来像についてディスカッションを行います。
-        </p>
-
-        <p>主催は、Code for Harima及びOSMFJメンバーを主体とするSotM Japan実行委員会が行い、OSMFJは全面的に協力いたします。</p>
-
+        <p>SotM Japanでは、全世界版のSotMの趣旨および価値観をそのままに、日本および日本語でのOSM活動について、新しいアイディアや開発手法、利用方法、ビジネス事例、将来像についてディスカッションを行います。</p>
       </div>
     </div>
   </div>
 </section>
+<section id="news">
+  <div class="container py-4 py-xl-3">
+    <div class="row justify-content-center">
+      <div class="col">
 
-<section>
-  <div class="container py-4 py-xl-5">
-    <h2 class="display-6 fw-bold mb-4" id="event-outline"><i class="bi bi-card-text"></i> 開催概要</h2>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="display-6 fw-bold mb-4"><i class="bi bi-newspaper"></i> お知らせ</h2>
+
+            <div class="container">
+              <ul>
+                <li><strong>本カンファレンスの<a href="https://forms.gle/AqBKpkDBfcdnBs896">発表募集中</a></strong>です（締め切りは10月末）。<br />
+                  応募にあたって、特にスキルや技術は問いません。OpenStreetMapでやってみたいこと、やったことなど何でも結構です。<br />
+                  研究発表・ソフト/サービスの紹介から、マッピングパーティの報告・告知まで、みなさんの応募を期待しています。<br />
+                  ※12/3に加古川に来れない方は、オンライン登壇も受け付けます。また、パネル展示（A1サイズ程度）も受け付けます。<br />
+                  ※発表以外の企画をお持ちの方は、「希望する発表内容」を「その他」にしてお気軽にお問い合わせください。
+                </li>
+              </ul>
+              <div class="overflow-auto" style="height:220px;">
+                <ul>
+                  <li>2022/10/16 <a href="https://forms.gle/AqBKpkDBfcdnBs896">発表募集</a>を開始しました。みなさんの応募を期待しています。</li>
+                  <li>2022/10/16 <a href="https://www.mapbox.jp/">mapbox</a>様がシルバースポンサーになりました</li>
+                  <li>2022/10/03 ホームページをリニューアルしました</li>
+                  <li>2022/09/27 <a href="https://www.osgeo.jp/">一般社団法人OSGeo日本支部 （OSGeo.JP）</a>様から後援を頂きました</li>
+                  <li>2022/09/16 <a href="https://www.facebook.com/OKFjp/">オープン・ナレッジ・ファウンデーション・ジャパン</a>様から後援を頂きました</li>
+                  <li>2022/09/13 <a href="https://www.aoyama.ac.jp/faculty/gsc/">青山学院大学 地球社会共生学部</a>様から後援を頂きました</li>
+                  <li>2022/09/13 <a href="https://twitter.com/youthmappers4a1">YouthMappers AGU</a>様から後援を頂きました</li>
+                  <li>2022/09/13 <a href="http://crisismappers.jp/">NPO法人CrisisMappers Japan</a>様から後援を頂きました</li>
+                  <li>2022/09/13 <a href="https://www.ospn.jp/">Open Source People Network</a>様から後援を頂きました</li>
+                  <li>2022/09/13 <a href="https://www.code4japan.org/">Code for Japan</a>様から後援を頂きました</li>
+                  <li>2022/09/13 ホームページを公開しました</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="event-outline">
+  <div class="container py-4 py-xl-1">
     <div class="row justify-content-center">
       <div class="col">
 
@@ -135,16 +162,18 @@
 
             <div class="container">
               <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="display-6 fw-bold mb-4"><i class="bi bi-card-text"></i> 開催概要</h2>
+                </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li>イベントタイトル: State of the Map Japan 2022</li>
+                    <li>タイトル: State of the Map Japan 2022</li>
                     <li>開催日時: 2022年12月3日(土曜日) 13:00 - 18:00</li>
                     <li>
                       開催場所: 加古川商工会議所<br />
-                      〒675-0064 兵庫県加古川市加古川町溝之口800<br />
-                      (34.76448, 134.84012 / EPSG:4326)
+                      〒675-0064 兵庫県加古川市加古川町溝之口800
                     </li>
-                    <li>参加費: 無料</li>
+                    <li>参加費: 無料(寄付募集予定)</li>
                     <li>主催:
                       <ul>
                         
@@ -158,7 +187,7 @@
                     <li>共催:
                       <ul>
                         
-                        <li><a href="https://osmf.jp/">一般社団法人 OpenStreetMap Foundation Japan</a></li>
+                        <li><a href="https://www.osmf.jp/">一般社団法人 OpenStreetMap Foundation Japan</a></li>
                         
                       </ul>
                     </li>
@@ -169,7 +198,7 @@
                     <li>後援:
                       <ul>
                         
-                        <li><a href="https://okfn.jp/">オープン・ナレッジ・ファウンデーション・ジャパン</a></li>
+                        <li><a href="https://www.facebook.com/OKFjp/">オープン・ナレッジ・ファウンデーション・ジャパン</a></li>
                         
                         <li><a href="https://www.code4japan.org/">Code for Japan</a></li>
                         
@@ -192,7 +221,7 @@
                 </div>
               </div>
             </div>
-            <p class="card-text">参加者の属性としては、OSM編集者、OSMデータ利用企業、地理空間情報技術者、学術利用者、行政関係者、シビックテックを始めとするコミュニティなどが中心となります。地方からの参加・発表も予定しています</p>
+            <p class="card-text text-center">OpenStreetMap編集者、企業、技術者、研究者、行政関係者、シビックテックなどのコミュニティが集まり、各地・各領域の発表や交流を行います。</p>
           </div>
         </div>
 
@@ -201,15 +230,87 @@
   </div>
 </section>
 
+<section id="sponser">
+  <div class="container py-4 py-xl-5 mb-5">
+    <h2 class="display-6 fw-bold mb-2"><i class="bi bi-star"></i> スポンサー</h2>
+    <div class="row justify-content-center">
+      <div class="col">
+        
+        <h3 class="text-uppercase m-4">platinum</h3>
+        <div class="row justify-content-center">
+          
+          <div class="col text-center">
+            <div class="h-100" style="display: flex; justify-content: center; align-items: center;">
+              
+              <img src="img/noimg.webp" alt="foo company" width="200vw" />
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        <h3 class="text-uppercase m-4">gold</h3>
+        <div class="row justify-content-center">
+          
+          <div class="col text-center">
+            <div class="h-100" style="display: flex; justify-content: center; align-items: center;">
+              
+              <img src="img/noimg.webp" alt="foo company" width="200vw" />
+              
+            </div>
+          </div>
+          
+          <div class="col text-center">
+            <div class="h-100" style="display: flex; justify-content: center; align-items: center;">
+              
+              <img src="img/noimg.webp" alt="foo company" width="200vw" />
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        <h3 class="text-uppercase m-4">silver</h3>
+        <div class="row justify-content-center">
+          
+          <div class="col text-center">
+            <div class="h-100" style="display: flex; justify-content: center; align-items: center;">
+              
+              <a href="https://www.mapbox.jp/"><img src="img/mapbox-logo-black.png" alt="mapbox" width="200vw" /></a>
+              
+            </div>
+          </div>
+          
+          <div class="col text-center">
+            <div class="h-100" style="display: flex; justify-content: center; align-items: center;">
+              
+              <img src="img/noimg.webp" alt="bar company" width="200vw" />
+              
+            </div>
+          </div>
+          
+          <div class="col text-center">
+            <div class="h-100" style="display: flex; justify-content: center; align-items: center;">
+              
+              <img src="img/noimg.webp" alt="bar company" width="200vw" />
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
 <section class="even" id="committee">
-  <div class="container py-4 py-xl-5">
+  <div class="container pb-5">
     <h2 class="display-6 fw-bold mb-4"><i class="bi bi-chat-text"></i> 実行委員会について</h2>
     <div class="row justify-content-center">
       <div class="col-lg-10 mx-auto">
 
         <p>State of the Map Japan 2022 実行委員会は OpenStreetMap Japan Slack にて運用をしています。</p>
-
-        <p>実行委員会に興味のある方は OpenStreetMap Japan Slack に <a href="https://bit.ly/OSM_Japan" class="text-white fw-bold">参加</a> して <q>#71_sotmjp2022</q> へご参加ください。また、議事録などは原則公開をしています。</p>
+        <p>実行委員会に興味のある方は OpenStreetMap Japan Slack の <q>#71_sotmjp2022</q> に<a href="https://bit.ly/OSM_Japan" class="text-white fw-bold">参加</a> してください。議事録などは原則公開しています。</p>
 
       </div>
     </div>
@@ -238,36 +339,28 @@
 
       <div class="col-6 col-md-4 col-lg-3 mb-4">
         <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class="nav-link text-white">プログラム</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">ポスター発表</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">チケット申し込み</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">開催場所</a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 mb-4">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class="nav-link text-white">発表者募集</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">ポスター発表募集</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">企画募集</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white">LT募集</a></li>
+          <li class="nav-item"><a href="/#about" class="nav-link text-white">SOTMJについて</a></li>
+          <li class="nav-item"><a href="/#news" class="nav-link text-white">お知らせ</a></li>
+          <li class="nav-item"><a href="/#event-outline" class="nav-link text-white">開催概要</a></li>
+          <li class="nav-item"><a href="/#sponser" class="nav-link text-white">スポンサー</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white">プログラム(作成中)</a></li>
+          <li class="nav-item"><a href="https://forms.gle/AqBKpkDBfcdnBs896" class="nav-link text-white">発表申し込み</a></li>
+          <li class="nav-item"><a href="coc.html" class="nav-link text-white">行動規範</a></li>
         </ul>
       </div>
 
       <div class="col-6 col-md-4 col-lg-3 mb-4">
         <ul class="nav flex-column">
         
-        <li class="nav-item"><a href="https://twitter.com/osmfj" class="nav-link text-white text-capitalize"><i class="bi-twitter"></i> twitter</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/codeforharima/" class="nav-link text-white text-capitalize"><i class="bi-facebook"></i> Code for Harima</a></li>
         
-        <li class="nav-item"><a href="https://www.facebook.com/osmfj" class="nav-link text-white text-capitalize"><i class="bi-facebook"></i> facebook</a></li>
+        <li class="nav-item"><a href="https://twitter.com/osmfj" class="nav-link text-white text-capitalize"><i class="bi-twitter"></i> OpenStreetMap Foundation Japan</a></li>
+        
+        <li class="nav-item"><a href="https://www.facebook.com/osmfj" class="nav-link text-white text-capitalize"><i class="bi-facebook"></i> OpenStreetMap Foundation Japan</a></li>
         
         <li class="nav-item"><a href="https://www.youtube.com/channel/UCKS6DjwrVC1gEx6PO0nX3TQ" class="nav-link text-white text-capitalize"><i class="bi-youtube"></i> youtube</a></li>
         
-        <li class="nav-item"><a href="https://t.me/osmjapan" class="nav-link text-white text-capitalize"><i class="bi-telegram"></i> telegram</a></li>
-        
         <li class="nav-item"><a href="https://github.com/osmfj" class="nav-link text-white text-capitalize"><i class="bi-github"></i> github</a></li>
-        
-        <li class="nav-item"><a href="https://blog.openstreetmap.org/?lang=ja" class="nav-link text-white text-capitalize"><i class="bi-journal"></i> blog</a></li>
         
         <li class="nav-item"><a href="https://wiki.openstreetmap.org/wiki/JA:Main_Page" class="nav-link text-white text-capitalize"><i class="bi-pencil-square"></i> wiki</a></li>
         

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-  --main-color: #49bb8c;
+  --main-color: #499980;
   --accent-color: #e74c3c;
   --text-color: #363636;
   --gray-color: #c2c7ce;
@@ -19,16 +19,25 @@ body {
   font-family: var(--base-font-family)
 }
 
-a {
+section {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+li a {
   color: var(--text-color);
   text-decoration: none;
-  border-bottom: solid 2px transparent;
+  border-bottom: solid 2px var(--gray-color);
   transition: 0.5s;
+}
+
+a img {
+  border-bottom: initial !important;
 }
 
 a:hover {
   color: var(--text-color);
-  border-bottom: solid 2px var(--text-color);
+  border-bottom: solid 1px var(--text-color);
 }
 
 /* header */
@@ -90,7 +99,7 @@ section h2 i {
   font-feature-settings: "palt";
   text-justify: inter-character;
   word-break: break-all;
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
   line-height: 1.8;
   margin-bottom: 0.5rem;
   text-indent: 1em;
