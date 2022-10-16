@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=f05b0f172e1d9f424bf336c0f28c1c4d0756b4ee">
+    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=ba0893bfb1f2c6294f459bf2787b2a60deea77e1">
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=f05b0f172e1d9f424bf336c0f28c1c4d0756b4ee">
+    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=ba0893bfb1f2c6294f459bf2787b2a60deea77e1">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/2022/css/style.css?v=f05b0f172e1d9f424bf336c0f28c1c4d0756b4ee">
+  <link rel="stylesheet" href="/2022/css/style.css?v=ba0893bfb1f2c6294f459bf2787b2a60deea77e1">
   
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
@@ -149,7 +149,7 @@ State of the Map Japan 2022 実行委員会は OpenStreetMap Japan Slack にて�
           <li class="nav-item"><a href="./index.html#event-outline" class="nav-link text-white">開催概要</a></li>
           <li class="nav-item"><a href="./index.html#sponser" class="nav-link text-white">スポンサー</a></li>
           <li class="nav-item"><a href="./index.html#" class="nav-link text-white">プログラム(作成中)</a></li>
-          <li class="nav-item"><a href="./https://forms.gle/AqBKpkDBfcdnBs896" class="nav-link text-white">発表申し込み</a></li>
+          <li class="nav-item"><a href="https://forms.gle/AqBKpkDBfcdnBs896" class="nav-link text-white">発表申し込み</a></li>
           <li class="nav-item"><a href="./coc.html" class="nav-link text-white">行動規範</a></li>
         </ul>
       </div>
