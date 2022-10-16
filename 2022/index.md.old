@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=693c072e7be99e994281127c713d8f665be50249">
+    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=26759e765860bd6e74b90472e4e867e2078aa183">
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=693c072e7be99e994281127c713d8f665be50249">
+    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=26759e765860bd6e74b90472e4e867e2078aa183">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/2022/css/style.css?v=693c072e7be99e994281127c713d8f665be50249">
+  <link rel="stylesheet" href="/2022/css/style.css?v=26759e765860bd6e74b90472e4e867e2078aa183">
   
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
@@ -37,6 +37,7 @@
   <meta property="og:title" content="State of the Map Japan 2022">
   <meta property="og:description" content="世界を自由な地図にしよう">
   <meta property="og:locale" content="ja">
+  <meta property="og:updated_time" content="2022-10-17T00:30:00+09:00" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@osmfj">
 </head>
@@ -142,7 +143,7 @@ State of the Map Japan 2022 実行委員会は OpenStreetMap Japan Slack にて�
   <div class="container py-4 px-xxl-5">
     <div class="row justify-content-center">
 
-      <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="col-6 col-md-5 col-lg-4 mb-4">
         <ul class="nav flex-column">
           <li class="nav-item"><a href="./index.html#about" class="nav-link text-white">SOTMJについて</a></li>
           <li class="nav-item"><a href="./index.html#news" class="nav-link text-white">お知らせ</a></li>
@@ -154,7 +155,7 @@ State of the Map Japan 2022 実行委員会は OpenStreetMap Japan Slack にて�
         </ul>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-3 mb-4">
+      <div class="col-6 col-md-5 col-lg-4 mb-4">
         <ul class="nav flex-column">
         
         <li class="nav-item"><a href="https://www.facebook.com/codeforharima/" class="nav-link text-white text-capitalize"><i class="bi-facebook"></i> Code for Harima</a></li>
