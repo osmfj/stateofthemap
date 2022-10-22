@@ -33,6 +33,7 @@ li a {
 
 a img {
   border-bottom: initial !important;
+  margin: 40px;
 }
 
 a:hover {
