@@ -19,6 +19,25 @@ body {
   font-family: var(--base-font-family)
 }
 
+h5 {
+  color: darkgreen;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h5 span {
+  display: inline-block;
+  background-color: darkgreen;
+  padding: 2px 4px;
+  margin: 2px;
+  color: #ffffff;
+}
+
+.speaker{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 section {
   padding-top: 60px;
   margin-top: -60px;
