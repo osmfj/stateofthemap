@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=c6a228a11d0a2a91d4214d94db69258d1c2d396c">
+    href="/2022/css/bootstrap-5.2.1/css/bootstrap.min.css?v=ac419de3ef9acf5aa27463a9588d2e4e1735e002">
   <link rel="stylesheet"
-    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=c6a228a11d0a2a91d4214d94db69258d1c2d396c">
+    href="/2022/css/bootstrap-icons-1.9.1/bootstrap-icons.css?v=ac419de3ef9acf5aa27463a9588d2e4e1735e002">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/2022/css/style.css?v=c6a228a11d0a2a91d4214d94db69258d1c2d396c">
+  <link rel="stylesheet" href="/2022/css/style.css?v=ac419de3ef9acf5aa27463a9588d2e4e1735e002">
   
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
