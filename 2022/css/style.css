@@ -29,7 +29,15 @@ h5 span {
   display: inline-block;
   background-color: darkgreen;
   padding: 2px 4px;
-  margin: 2px;
+  margin: 2px 4px;
+  color: #ffffff;
+}
+
+h5 span.red{
+  display: inline-block;
+  background-color: darkred;
+  padding: 2px 4px;
+  margin: 2px 4px;
   color: #ffffff;
 }
 
@@ -100,11 +108,6 @@ section h2 i {
   font-size: 3rem;
   font-weight: 900;
   vertical-align: -.125em;
-}
-
-.speakertalk {
-  color: var(--bg-color);
-  background-color: var(--main-color);
 }
 
 /* page */
