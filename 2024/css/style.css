@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+:root {
+  --main-color: #499980;
+  --accent-color: #e74c3c;
+  --text-color: #363636;
+  --gray-color: #c2c7ce;
+  --bg-color: #f4f3f1;
+  --base-font-family: "Noto Sans CJK JP", "Noto Sans JP", "BIZ UDPGothic", "BIZ UDGothic", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--base-font-family)
+}
+
+h5 {
+  color: darkgreen;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h5 span {
+  display: inline-block;
+  background-color: darkgreen;
+  padding: 2px 4px;
+  margin: 2px 4px;
+  color: #ffffff;
+}
+
+h5 span.red{
+  display: inline-block;
+  background-color: darkred;
+  padding: 2px 4px;
+  margin: 2px 4px;
+  color: #ffffff;
+}
+
+.speaker{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+section {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+li a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: solid 2px var(--gray-color);
+  transition: 0.5s;
+}
+
+a img {
+  border-bottom: initial !important;
+  margin: 60px 100px;
+}
+
+a:hover {
+  color: var(--text-color);
+  border-bottom: solid 1px var(--text-color);
+}
+
+/* header */
+
+header {
+  background-image: url("../img/Sapporo-duo.webp");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+header h1,
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+header p.lead {
+  font-feature-settings: "palt";
+}
+
+/* section */
+
+section {
+  font-feature-settings: "palt";
+}
+
+section.even {
+  color: var(--bg-color);
+  background-color: var(--main-color);
+}
+
+section h2,
+section h3 {
+  font-weight: 700;
+  text-align: center;
+}
+
+section h2 i {
+  font-size: 3rem;
+  font-weight: 900;
+  vertical-align: -.125em;
+}
+
+/* page */
+
+.page__article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page__article p {
+  text-align: justify;
+  font-feature-settings: "palt";
+  text-justify: inter-character;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  text-indent: 1em;
+}
+
+aside.coc_publishing {
+  width: 90%;
+}
+
+.coc_publishing p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  text-indent: 0;
+}
+
+
+/* footer */
+
+footer {
+  color: white;
+  background-color: var(--text-color);
+}
